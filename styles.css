@@ -23,6 +23,11 @@ a{
     justify-content: center;
 }
 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /*Hero Section*/
 #hero{
     background-image: url(./img/1.jpg);
@@ -30,6 +35,14 @@ a{
     background-position: center;
     position: relative;
     z-index: 1;
+}
+
+p{
+    color: wheat;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-weight: 300;
 }
 
 #hero::after {
@@ -64,6 +77,7 @@ a{
 }
 
 #hero h1:nth-child(1){
+    animation: text_reveal_name .5s ease forwards;
 animation-delay: 1s;
 }
 #hero h1:nth-child(2){
@@ -117,6 +131,111 @@ animation-delay: 1s;
 }
 /*End Hero Section*/
 
+/* Servisi */
+
+#services{
+    background-image: url(./img/services.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+
+
+
+
+
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+ 
+}
+
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color:whitesmoke;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+   letter-spacing: .2rem;
+   text-align: center;
+}
+#services .section-title span{
+    color: red;
+}
+
+#services .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#services .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-justify: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+
+#services .recording{
+    background-image: url(./img/recording.jpg);
+    background-size: cover;
+}
+
+#services .composing{
+    background-image: url(./img/composing.jpg);
+    background-size: cover;
+}
+#services .mixing{
+    background-image: url(./img/mixing.jpg);
+    background-size: cover;
+}
+#services .mastering{
+    background-image: url(./img/mastering.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg,blue,white 100%) ;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.services .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#services .service-item h2{
+    color: white;
+    font-size: 2rem;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+/*kraj*/
 
 
 @keyframes text_reveal_box{
@@ -135,5 +254,13 @@ animation-delay: 1s;
 @keyframes text_reveal{
     100%{
         color: white;
+    }
+}
+
+
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
+        font-weight: 500px;
     }
 }
