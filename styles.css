@@ -153,7 +153,7 @@ animation-delay: 1s;
  
 }
 
-#services .section-title{
+ .section-title{
     font-size: 4rem;
     font-weight: 300;
     color:whitesmoke;
@@ -236,6 +236,52 @@ animation-delay: 1s;
 }
 
 /*kraj*/
+
+
+/*Gallery*/
+#gallery{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+#gallery h1{
+    color: crimson;
+}
+
+#gallery .all-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gallery .gallery-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+#gallery .gallery-img{
+    flex-basis: 80%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#gallery .gallery-img img{
+    transition: .7s ease transform;
+}
+
+#gallery .gallery-item:hover .gallery-img img{
+transform:scale(1.1);
+}
+
 
 
 @keyframes text_reveal_box{
