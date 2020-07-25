@@ -38,11 +38,13 @@ img{
 }
 
 p{
-    color: wheat;
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    font-weight: 300;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 200;
+    
+    
 }
 
 #hero::after {
@@ -282,7 +284,38 @@ animation-delay: 1s;
 transform:scale(1.1);
 }
 
+/*Kraj*/
 
+/*O nama*/
+.about{
+   flex-direction: column-reverse;
+   text-align: center;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 100px 20px;
+}
+
+.about .col-left{
+    width: 600px;
+    height: 360px;
+}
+
+.about .col-right{
+    width: 100%;
+}
+
+.about .col-right h1{
+    color: black;
+}
+
+.about .col-right p{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+
+
+/*Kraj*/
 
 @keyframes text_reveal_box{
     50%{
