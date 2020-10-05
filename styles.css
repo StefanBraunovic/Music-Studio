@@ -387,31 +387,177 @@ color: white;
 
 
 
-#gallery h1{
-    color: #711011;
+.wrapper-gallery{
+	margin: 0 20vw;
 }
-
-.all-images{
-  
-    min-height: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-
-  
-   grid-gap:5px;
-  padding: 10px;
-  margin: 50px;
-
+#index-gallery{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-gap: 10px;
+grid-template-areas: 
+"fotka1 fotka2 fotka3 fotka4"
+"fotka5 fotka6 fotka7 fotka8"
+"fotka9 fotka10 fotka11 fotka12";
 }
-
-.all-images img{
+#index-gallery .gallery-fotka{
 	width: 100%;
-	border-radius: 5px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	}
+#index-gallery h1{
+				color: #711011;
+			}
 
+
+/* Fotke */
+
+#index-gallery .fotka1{
+grid-area: fotka1;
+background-image: url("./img/thumbs/1.jpg");
 }
+#index-gallery .fotka2{
+	grid-area: fotka2;
+	background-image: url("./img/thumbs/2.jpg");
+	}
+	#index-gallery .fotka3{
+		grid-area: fotka3;
+		background-image: url("./img/thumbs/3.jpg");
+		}
+		#index-gallery .fotka4{
+			grid-area: fotka4;
+			background-image: url("./img/thumbs/4.jpg");
+			}
+			#index-gallery .fotka5{
+				grid-area: fotka5;
+				background-image: url("./img/thumbs/5.jpg");
+				}
+				#index-gallery .fotka6{
+					width: 100%;
+					grid-area: fotka6;
+					background-image: url("./img/thumbs/6.jpg");
+					}
+					#index-gallery .fotka7{
+						grid-area: fotka7;
+						background-image: url("./img/thumbs/7.jpg");
+						}
+						#index-gallery .fotka8{
+							grid-area: fotka8;
+							background-image: url("./img/thumbs/8.jpg");
+							}
+							#index-gallery .fotka9{
+								grid-area: fotka9;
+								background-image: url("./img/thumbs//9.jpg");
+								}
+								#index-gallery .fotka10{
+									grid-area: fotka10;
+									background-image: url("./img/thumbs/10.jpg");
+									}
+									#index-gallery .fotka11{
+										grid-area: fotka11;
+										background-image: url("./img/thumbs/11.jpg");
+										}
+										#index-gallery .fotka12{
+											grid-area: fotka12;
+											background-image: url("./img/thumbs/12.jpg");
+											}
+	/*Gallery image title  */
+
+	.gallery-fotka div{
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.gallery-fotka a{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		color: white;
+		text-transform: none;
+		text-transform: uppercase;
+	}
+	.gallery-fotka div:hover{
+		
+		opacity: 0.8;
+		transition: all ease-in-out 100ms;
+		
+	}
 
 
+	/* Popup window when clicked */
 
+	.img-window{
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0,0,0,0.8);
+		position: fixed;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		z-index: 100;
+		
+	}
+	.img-window img{
+		margin-top: 40px;
+		max-height: 80vh;
+		max-width: 80%;
+	}
+
+	/* Buttons */
+
+	.img-btn-next{
+		display: block;
+		padding: 6px 10px;
+		margin-right: 45px;
+		border-radius: 4px;
+		background-color: #111111;
+		position: fixed;
+		top: 50%;
+		z-index: 500;
+		font-family: Arial, Helvetica, sans-serif;
+		color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+
+	}
+	
+	.img-btn-next:hover{
+	opacity: 0.8;
+
+	}
+
+	.img-btn-prev{
+		display: block;
+		padding: 6px 10px;
+		margin-left: 45px;
+		border-radius: 4px;
+		background-color: #111111;
+		position: fixed;
+		top: 50%;
+		z-index: 500;
+		font-family: Arial, Helvetica, sans-serif;
+		color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+
+	}
+
+	.img-btn-:hover{
+		opacity: 0.8;
+	
+		}
+		
+											
 
 
 
@@ -675,7 +821,7 @@ iframe{
 #contact .section-title{
 		margin-bottom: 200px;
 	}
-
+	
 	
 	
 	/* End contact  */
@@ -714,7 +860,15 @@ iframe{
 		margin-bottom: 200px;
 	}
 
-	
+	.img-btn-prev{
+		margin: 0;
+	}
+	.img-btn-next{
+		margin: 0;
+	}
+	.img-window img{
+		width: 80%;
+	}
 
 }
 /* End  Media Query For Desktop */
