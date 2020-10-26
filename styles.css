@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
 	padding: 0;
@@ -8,7 +8,7 @@
 
 html {
 	font-size: 10px;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 a {
 	text-decoration: none;
@@ -120,7 +120,7 @@ img {
 }
 #header .hamburger:after {
 	position: absolute;
-	content: "";
+	content: '';
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
@@ -136,7 +136,7 @@ img {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-	content: "";
+	content: '';
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -180,7 +180,7 @@ p {
 }
 
 #hero::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -297,7 +297,7 @@ p {
 
 #services .service-bottom {
 	display: flex;
-	align-items: center;
+
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
@@ -321,6 +321,7 @@ p {
 #services .recording {
 	background-image: url(./img/recording.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 #services .composing {
@@ -340,11 +341,10 @@ p {
 	background-image: url(./img/13.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 205px;
 }
 
 #services .service-item::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -356,8 +356,7 @@ p {
 }
 
 .services .icon {
-	height: 100px;
-	width: 80px;
+	width: 50%;
 	margin-bottom: 20px;
 }
 
@@ -385,10 +384,10 @@ p {
 	grid-template-rows: auto;
 	grid-gap: 10px;
 	grid-template-areas:
-		"fotka1 fotka2 fotka3 fotka4"
-		"fotka5 fotka6 fotka7 fotka8"
-		"fotka9 fotka10 fotka11 fotka12"
-		"fotka13 fotka14 fotka15 fotka16";
+		'fotka1 fotka2 fotka3 fotka4'
+		'fotka5 fotka6 fotka7 fotka8'
+		'fotka9 fotka10 fotka11 fotka12'
+		'fotka13 fotka14 fotka15 fotka16';
 }
 #index-gallery .gallery-fotka {
 	width: 100%;
@@ -407,68 +406,68 @@ p {
 
 #index-gallery .fotka1 {
 	grid-area: fotka1;
-	background-image: url("./img/thumbs/1.jpg");
+	background-image: url('./img/thumbs/1.jpg');
 }
 #index-gallery .fotka2 {
 	grid-area: fotka2;
-	background-image: url("./img/thumbs/2.jpg");
+	background-image: url('./img/thumbs/2.jpg');
 }
 #index-gallery .fotka3 {
 	grid-area: fotka3;
-	background-image: url("./img/thumbs/3.jpg");
+	background-image: url('./img/thumbs/3.jpg');
 }
 #index-gallery .fotka4 {
 	grid-area: fotka4;
-	background-image: url("./img/thumbs/4.jpg");
+	background-image: url('./img/thumbs/4.jpg');
 }
 #index-gallery .fotka5 {
 	grid-area: fotka5;
-	background-image: url("./img/thumbs/5.jpg");
+	background-image: url('./img/thumbs/5.jpg');
 }
 #index-gallery .fotka6 {
 	width: 100%;
 	grid-area: fotka6;
-	background-image: url("./img/thumbs/6.jpg");
+	background-image: url('./img/thumbs/6.jpg');
 }
 #index-gallery .fotka7 {
 	grid-area: fotka7;
-	background-image: url("./img/thumbs/7.jpg");
+	background-image: url('./img/thumbs/7.jpg');
 }
 #index-gallery .fotka8 {
 	grid-area: fotka8;
-	background-image: url("./img/thumbs/8.jpg");
+	background-image: url('./img/thumbs/8.jpg');
 }
 #index-gallery .fotka9 {
 	grid-area: fotka9;
-	background-image: url("./img/thumbs//9.jpg");
+	background-image: url('./img/thumbs//9.jpg');
 }
 #index-gallery .fotka10 {
 	grid-area: fotka10;
-	background-image: url("./img/thumbs/10.jpg");
+	background-image: url('./img/thumbs/10.jpg');
 }
 #index-gallery .fotka11 {
 	grid-area: fotka11;
-	background-image: url("./img/thumbs/11.jpg");
+	background-image: url('./img/thumbs/11.jpg');
 }
 #index-gallery .fotka12 {
 	grid-area: fotka12;
-	background-image: url("./img/thumbs/12.jpg");
+	background-image: url('./img/thumbs/12.jpg');
 }
 #index-gallery .fotka13 {
 	grid-area: fotka13;
-	background-image: url("./img/thumbs/13.jpg");
+	background-image: url('./img/thumbs/13.jpg');
 }
 #index-gallery .fotka14 {
 	grid-area: fotka14;
-	background-image: url("./img/thumbs/14.jpg");
+	background-image: url('./img/thumbs/14.jpg');
 }
 #index-gallery .fotka15 {
 	grid-area: fotka15;
-	background-image: url("./img/thumbs/15.jpg");
+	background-image: url('./img/thumbs/15.jpg');
 }
 #index-gallery .fotka16 {
 	grid-area: fotka16;
-	background-image: url("./img/thumbs/16.jpg");
+	background-image: url('./img/thumbs/16.jpg');
 }
 /*Gallery image title  */
 
@@ -571,27 +570,81 @@ transform:scale(1.1);
 	grid-template-columns: 1fr 4fr 1fr;
 	grid-template-rows: auto;
 	background-color: black;
+	padding: 10px;
+	justify-content: center;
 }
 
 .about p {
 	color: white;
+	line-height: 25px;
+	text-align: start;
 }
 
 .about h1 {
 	text-align: center;
 	color: rgb(78, 76, 76);
+	margin-top: 80px;
 }
 
-.about .col-right {
+.col-right {
+	display: grid;
 	grid-column: 2;
+	grid-gap: 20px;
 }
 
-.about img {
-	grid-column: 2;
-	margin-bottom: 100px;
+.song {
+	display: grid;
+	padding: 0 20px 0 20px;
+	grid-gap: 20px;
+	line-height: 15px;
 }
+
+/* .about-img {
+	width: 20px;
+} */
 
 /*Kraj*/
+
+/* clients */
+#clients {
+	background-color: black;
+}
+
+.cli-wrapper {
+	padding-top: 70px;
+}
+
+.clients {
+	display: grid;
+	padding: 50px 50px 50px 50px;
+	grid-template-rows: 1fr;
+	width: 100%;
+
+	grid-gap: 20px;
+	text-align: center;
+}
+
+.cli-slika {
+	grid-column: 1;
+	align-self: center;
+}
+.cli h1 {
+	color: #b3b2b2;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.clients uL {
+	list-style: none;
+	padding: 5px;
+	color: #cccccc;
+	line-height: 25px;
+	font-weight: 700;
+	font-size: 1.8vh;
+}
+
+/* team */
 
 /*Kontakt*/
 #contact {
@@ -666,7 +719,7 @@ transform:scale(1.1);
 	margin-bottom: 30px;
 }
 #footer .social-item {
-	height: 55px;
+	height: 30%px;
 	width: 50px;
 }
 #footer .social-item img {
@@ -813,7 +866,13 @@ iframe {
 	#contact .section-title {
 		margin-bottom: 200px;
 	}
+	.cli-slika img {
+		width: 40%;
+	}
 
+	/* .cli {
+		line-height: 40px;
+	} */
 	/* End contact  */
 }
 /* End Media Query For Tablet */
@@ -859,5 +918,52 @@ iframe {
 	.img-window img {
 		width: 80%;
 	}
+	.about p {
+		color: white;
+		line-height: 25px;
+		text-align: justify;
+	}
+
+	.song {
+		display: grid;
+		padding: 0 300px 0 300px;
+		grid-gap: 20px;
+		line-height: 15px;
+	}
+	#clients {
+		background-color: black;
+	}
+
+	.cli-wrapper {
+		padding-top: 70px;
+	}
+
+	.clients {
+		display: grid;
+		padding: 50px 100px 50px 100px;
+		grid-template-columns: repeat(4, 1fr);
+		width: 100%;
+		height: 100%;
+		grid-gap: 100px;
+		text-align: start;
+	}
+
+	.cli-slika {
+		grid-column: 1;
+		align-self: center;
+	}
+
+	.clients uL {
+		list-style: none;
+		padding: 5px;
+		color: #cccccc;
+		line-height: 20px;
+		font-weight: 700;
+		font-size: 1.8vh;
+	}
+	.cli-slika img {
+		width: 100%;
+	}
 }
+
 /* End  Media Query For Desktop */
